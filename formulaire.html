@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCima</title>
+    <link rel="stylesheet" href="formulaire.css" />
+    <link rel="icon" type="image/x-icon" href="images/movie-logo.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">NCima</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="movielist.html">Movies</a>
+        <a href="formulaire.html">Sign In</a>
+      </nav>
+    </header>
+
+    <form name="mon_premier_formulaire" method="get">
+      <h1>Sign in</h1>
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="n">Name :</label>
+        <input type="text" id="n" maxlength="30" value="Name" required />
+        <label for="d">Date of birth :</label>
+        <input type="date" id="d" maxlength="30" />
+        <label>Sexe :</label>
+        <input type="radio" name="sexe" value="Masculin" checked />Male
+        <input type="radio" name="sexe" value="Feminin" />Female
+
+        <label for="e">Address Email :</label>
+        <input type="email" id="e" name="email" value="Adress Email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="section">AGE :</label>
+        <select id="section" size="1">
+          <option>+3</option>
+          <option>+8</option>
+          <option>+14</option>
+          <option>+18</option>
+        </select>
+
+        <label>Interests :</label><br />
+        <input type="checkbox" name="option1" value="Horror" /> Horror <br />
+        <input type="checkbox" name="option2" value="Comedy" /> Comedy <br />
+        <input type="checkbox" name="option3" value="Romantic" /> Romantic
+        <br />
+        <input type="checkbox" name="option3" value="Action" /> Action <br />
+
+        <label for="p">Your Picture jpg, png... :</label>
+        <input type="file" id="p" value="Parcourir" size="35" />
+      </fieldset>
+
+      <input type="submit" value="Send" />
+      <input type="reset" value="Cancel" />
+    </form>
+
+    <footer>
+      <p>&copy; Nermine 2024</p>
+    </footer>
+  </body>
+</html>
